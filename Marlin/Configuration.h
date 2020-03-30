@@ -484,9 +484,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // Bq Hephestos (i3)
-  #define DEFAULT_Kp 23.05
-  #define DEFAULT_Ki 2.00
-  #define DEFAULT_Kd 66.47
+  #define DEFAULT_Kp 19.94
+  #define DEFAULT_Ki 1.35
+  #define DEFAULT_Kd 73.93
 
   // Ultimaker
   // #define DEFAULT_Kp 22.2

@@ -1,0 +1,17 @@
+name: sync-fork
+
+on:
+  schedule:
+  - cron:  "0 */2 * * *"
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: repo-sync
+      uses: repo-sync/github-sync@v2
+      with:
+        source_repo: "MarlinFirmware/Marlin"
+        source_branch: "*"
+        destination_branch: "*"
+        github_token: ${{ secrets.GITHUB_TOKEN }}
